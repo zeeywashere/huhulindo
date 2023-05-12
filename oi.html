@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>huhu Malvadão</title>
+	<style>
+		button {
+			font-size: 1.2em;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#botaoSim {
+			background-color: green;
+			color: white;
+			margin-right: 20px; 
+		}
+		#botaoNao {
+			background-color: red;
+			color: white;
+			margin-left: 20px; 
+			position: relative; 
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			background-color: black; 
+			color: white;
+			font-family: Arial, sans-serif;
+			position: relative;
+		}
+		#feitoPor {
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+			font-size: 0.8em;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<h1>Você vai me dar seu cuzinho hoje?</h1>
+	<div>
+		<button id="botaoSim">Sim</button>
+		<button id="botaoNao">Não</button>
+	</div>
+	<div id="feitoPor">feito por Zeey'</div>
+	<script>
+		const botaoSim = document.getElementById('botaoSim');
+		botaoSim.addEventListener('click', () => {
+			window.location.href = 'https://www.youtube.com/watch?v=caj3cDYERDc';
+		});
+
+		const botaoNao = document.getElementById('botaoNao');
+		botaoNao.addEventListener('click', () => {
+			botaoNao.style.left = Math.random() * 90 + '%';
+		});
+	</script>
+</body>
+</html>
